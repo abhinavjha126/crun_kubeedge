@@ -100,20 +100,6 @@ cat > 01-crio-runc.conf << EOF
 runtime_path = "/usr/local/bin/crun"
 runtime_type = "oci"
 runtime_root = "/run/crun"
-
-
-# Add crun runtime here
-[crio.runtime.runtimes.crun]
-runtime_path = "/usr/local/bin/crun"
-runtime_type = "oci"
-runtime_root = "/run/crun"
-
-
-# Add crun runtime here
-[crio.runtime.runtimes.crun]
-runtime_path = "/usr/local/bin/crun"
-runtime_type = "oci"
-runtime_root = "/run/crun"
 EOF
 mv 01-crio-runc.conf /etc/crio/crio.conf.d/
 
